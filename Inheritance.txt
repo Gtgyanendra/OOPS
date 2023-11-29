@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		 Inheritance();
+	}
+	
+		         
+        static class Parent{
+            int a;
+        }
+        	   
+        static class Child extends Parent{
+              void show(){
+                System.out.println(a);
+              }
+        }
+        	
+        static void Inheritance(){
+           Child ch=new Child();
+           ch.a=10;
+           ch.show();
+        	   
+        }
+}

@@ -1,0 +1,68 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		    Polymorphism();
+		  
+		
+	}
+	
+		           //1. Compiletime Polymorphism
+        static class Company{
+        	    
+        	void show(int age, String name){
+             		System.out.println(name+" "+age);
+        	}
+        	    
+        	void show(String name, int age){
+              		System.out.println(name+" "+age);
+        	}
+        
+        }
+        	
+        	
+        	   //2. Runtime Polymorphism
+        	   
+        static class class1{    
+        	void show(String name,int marks){
+        	         System.out.println(name+" "+marks);
+        	}
+        }
+        	 
+        static class class2{
+                void show(String name,int marks){
+        	         System.out.println(name+" "+marks);
+        	}
+        }
+        	 
+        static class class3{
+               void show(String name,int marks){
+                        System.out.println(name+" "+marks);
+        	}
+        }
+                       	
+        static void Polymorphism(){
+          
+           // Compiletime polymorphism
+        	    
+           // Company XYZ=new Company();
+            
+           // XYZ.show("Kapil",26);
+            
+           // XYZ.show(26,"Gyanendra");
+        	    
+           // Runtime Polymorphism
+        	    
+            class1 topper1=new class1();
+            topper1.show("Sumit",96);
+        	    
+            class2 topper2=new class2();
+            topper2.show("Ram",98);
+        	    
+            class3 topper3=new class3();
+            topper3.show("Suraj",96);
+        	    
+        	    
+        }
+	
+}
